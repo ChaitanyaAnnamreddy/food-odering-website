@@ -1,6 +1,5 @@
-# Getting Started with Create React App
+<img width="626" alt="image" src="https://github.com/ChaitanyaAnnamreddy/food-odering-website/assets/120272918/60b358a8-45e0-4646-ac0b-5f2d2b2ccf3d">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
