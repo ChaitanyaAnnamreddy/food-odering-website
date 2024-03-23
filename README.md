@@ -1,4 +1,7 @@
-<img width="626" alt="image" src="https://github.com/ChaitanyaAnnamreddy/food-odering-website/assets/120272918/60b358a8-45e0-4646-ac0b-5f2d2b2ccf3d">
+
+
+https://github.com/ChaitanyaAnnamreddy/food-odering-website/assets/120272918/047b27ac-348b-45c3-a569-367241609a26
+
 
 
 ## Available Scripts
