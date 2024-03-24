@@ -10,9 +10,7 @@ class About extends Component {
   componentDidMount() {}
   render() {
     return (
-      <div className="about">
-        <h1>About Us</h1>
-        <p>Food ordering App using React</p>
+      <div className="text-gray-500 mt-60 text-center bg-white">
         <UserClass />
       </div>
     );

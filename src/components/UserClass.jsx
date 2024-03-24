@@ -25,23 +25,32 @@ class UserClass extends React.Component {
     const { name, html_url, location, avatar_url, bio } = this.state.userInfo;
 
     return (
-      <div className="user-card">
-        <img className="user-avatar" src={avatar_url} alt={name} />
-        <p>
-          <b>Name: </b>
-          {name}
-        </p>
-        <p>
-          <b>Github URL: </b>
-          {html_url}
-        </p>
-        <p>
-          <b>Bio: </b>
-          {bio}
-        </p>
-        <p>
-          <b>Location: </b> {location}{" "}
-        </p>
+      <div className="user-card  shadow-md rounded-lg overflow-hidden">
+        <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          Meet our Team
+        </h2>
+        <img
+          className="user-avatar rounded-full mx-auto mt-4 mb-2 w-20 h-20 object-cover"
+          src={avatar_url}
+          alt={name}
+        />
+        <div className="px-4 py-2">
+          <p className="text-xl font-medium text-gray-700">
+            <b>Name: </b>
+            {name}
+          </p>
+          <p className="text-gray-500">
+            <b>Github URL: </b>
+            {html_url}
+          </p>
+          <p className=" mt-6 text-lg leading-8 text-gray-600">
+            <b>Bio: </b>
+            {bio}
+          </p>
+          <p className="text-gray-500 mt-2">
+            <b>Location: </b> {location}{" "}
+          </p>
+        </div>
       </div>
     );
   }
