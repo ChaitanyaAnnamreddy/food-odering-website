@@ -17,6 +17,7 @@ class UserClass extends React.Component {
     const data = await fetch(
       "https://api.github.com/users/chaitanyaannamreddy"
     );
+    console.log(data);
     const json = await data.json();
     this.setState({ userInfo: json });
   }
@@ -25,10 +26,11 @@ class UserClass extends React.Component {
     const { name, html_url, location, avatar_url, bio } = this.state.userInfo;
 
     return (
-      <div className="user-card  shadow-md rounded-lg overflow-hidden">
+      <div className="user-card mt-4 shadow-l  rounded-lg mb-10 sm:py-3">
         <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
           Meet our Team
         </h2>
+
         <img
           className="user-avatar rounded-full mx-auto mt-4 mb-2 w-20 h-20 object-cover"
           src={avatar_url}

@@ -6,6 +6,7 @@ import Contact from "./components/Contact";
 import AppLayout from "./App";
 import Error from "./components/Error";
 import Body from "./components/Body";
+import Cart from "./components/Cart";
 import RestaurantMenu from "./components/RestaurantMenu";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Shimmer from "./components/Shimmer";
@@ -41,6 +42,10 @@ const appRouter = createBrowserRouter([
       {
         path: "restaurants/:resId",
         element: <RestaurantMenu />,
+      },
+      {
+        path: "/cart",
+        element: <Cart />,
       },
     ],
   },

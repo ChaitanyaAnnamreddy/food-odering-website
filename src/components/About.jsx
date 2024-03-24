@@ -10,7 +10,7 @@ class About extends Component {
   componentDidMount() {}
   render() {
     return (
-      <div className="text-gray-500 mt-60 text-center bg-white">
+      <div className="text-gray-500 mt-32 text-center bg-white">
         <UserClass />
       </div>
     );

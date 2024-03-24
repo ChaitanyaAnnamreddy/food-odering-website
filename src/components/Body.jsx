@@ -8,7 +8,7 @@ const Body = () => {
   const [listOfRestaurants, setListOfRestaurants] = useState([]);
   const [filteredRestaurant, setFilteredRestaurant] = useState([]);
   const [searchText, setSearchText] = useState("");
-
+  const [isFiltered, setIsFiltered] = useState(false);
   const RestaurantCardPromoted = withPromotedLabel(RestaurantCard);
 
   useEffect(() => {
@@ -69,13 +69,19 @@ const Body = () => {
           <button
             className="m-8 item-center px-5 py-2.5 font-medium bg-blue-500 hover:bg-blue-700 hover:text-white text-white rounded-lg text-sm"
             onClick={() => {
-              let filteredList = listOfRestaurants.filter(
-                (res) => res.info.avgRating > 4.3
-              );
-              setFilteredRestaurant(filteredList);
+              setIsFiltered(!isFiltered); // Toggle filtered state on click
+
+              if (isFiltered) {
+                setFilteredRestaurant(listOfRestaurants); // Reset to all restaurants
+              } else {
+                let filteredList = listOfRestaurants.filter(
+                  (res) => res.info.avgRating > 4.3
+                );
+                setFilteredRestaurant(filteredList);
+              }
             }}
           >
-            Top Rated Restaurants
+            {isFiltered ? "Show All Restaurants" : "Top Rated Restaurants"}
           </button>
         </div>
       </div>
