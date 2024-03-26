@@ -10,6 +10,7 @@ import Cart from "./components/Cart";
 import RestaurantMenu from "./components/RestaurantMenu";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Shimmer from "./components/Shimmer";
+import Checkout from "./components/Checkout";
 
 const About = lazy(() => import("./components/About"));
 
@@ -46,6 +47,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/cart",
         element: <Cart />,
+      },
+      {
+        path: "/checkout",
+        element: <Checkout />,
       },
     ],
   },
