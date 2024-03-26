@@ -1,7 +1,9 @@
 
 
 
-https://github.com/ChaitanyaAnnamreddy/food-odering-website/assets/120272918/7cd43f12-24d0-4040-808a-d103b28df9e6
+
+https://github.com/ChaitanyaAnnamreddy/food-odering-website/assets/120272918/fad06f26-8cb8-46f0-965e-9f6b9f88d5bd
+
 
 
 
